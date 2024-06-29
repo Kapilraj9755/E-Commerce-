@@ -12,9 +12,15 @@ const passport = require('passport');
 const LocalStrategy = require('passport-local');
 const User = require('./models/user');
 const MongoStore = require('connect-mongo');
+<<<<<<< HEAD
 const PORT = process.env.PORT || 5500;
 const db_url = process.env.DB_URL || 'mongodb://127.0.0.1:27017/e-commerce';
 //const db_url =  'mongodb://127.0.0.1:27017/e-commerce';
+=======
+const PORT = process.env.PORT || 5000;
+const db_url = process.env.DB_URL || 'mongodb://127.0.0.1:27017/e-commerce';
+
+>>>>>>> 811de4ab448f3a6f803c0c2595cebf937d93a79d
 
 mongoose.connect(db_url)
     .then(() => { console.log('DB connected!') })
@@ -83,7 +89,10 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
     console.log('Server is Up at port ', PORT);
 })
+<<<<<<< HEAD
 
 
 
 //mongodb+srv://kapilraj9755:9755425524@cluster0.ncf8cdh.mongodb.net/?retryWrites=true&w=majority
+=======
+>>>>>>> 811de4ab448f3a6f803c0c2595cebf937d93a79d
