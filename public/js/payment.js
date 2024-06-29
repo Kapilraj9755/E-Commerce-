@@ -8,6 +8,7 @@ async function makeOrder(amount) {
             data: { amount },
             headers: { 'X-Requested-With': 'XMLHttpRequest' },
         });
+        
         const { order } = response.data;
 
         const options = {

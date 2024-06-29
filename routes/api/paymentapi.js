@@ -3,7 +3,7 @@ const router = express.Router();
 const Razorpay = require('razorpay');
 const { isLoggedIn } = require('../../middleware');
 const Order = require("../../models/order");
-const { validatePaymentVerification } = require('razorpay/dist/utils/razorpay-utils');
+const { validatePaymentVerification } = require('razorpay/dist/utils/razorpay-utils'); // payment hone k baad verification
 const { RAZORPAY_KEY_ID, RAZORPAY_KEY_SECRET } = process.env;
 
 

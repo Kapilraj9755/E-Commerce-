@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Product = require('./models/product');
 
 
-mongoose.connect('mongodb+srv://kapilraj9755:9755425524@cluster0.ncf8cdh.mongodb.net/?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://kapilraj9755:9755425524@cluster0.abws962.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
     .then(()=>{console.log('DB connected!')})
     .catch(e => console.log(e));
 
